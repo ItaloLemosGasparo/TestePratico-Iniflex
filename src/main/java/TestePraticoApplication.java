@@ -74,7 +74,7 @@ public class TestePraticoApplication {
         System.out.println("\nTotal dos salários: " + formatCurrency(totalSalary));
 
         //3.12
-        final BigDecimal minimumWage = BigDecimal.valueOf(1212.00);
+        final BigDecimal minimumWage = BigDecimal.valueOf(1518); //Valor Salário mínimo
         System.out.println("\nQuantidade de salários mínimos por funcionário:");
         employees.forEach(employee -> {
             BigDecimal multiples = employee.getSalary().divide(minimumWage, 2, BigDecimal.ROUND_HALF_UP);
